@@ -12,9 +12,9 @@ public class program {
         System.out.println(d+e);  //30.0
         // boolean f = true;
         // boolean g = true;
-        // System.out.println(f+g); 
+        // System.out.println(f+g); CTE
         // boolean h = false;
         // int i = 10;
-        // System.out.println(h+i);
+        // System.out.println(h+i); CTE
     }
 }
