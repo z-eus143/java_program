@@ -8,9 +8,8 @@ public class Radian{
         double b = 7;
         double pi = (a/b);
         double degree = radian*(180/pi);
-        double minute = (degree - (int)degree)*60;
-        double seconds = (minute - (int)minute)*60;
-        System.out.println((int)degree + " Degree " + (int)minute + " Minute " + (int)seconds + " Seconds ");
+        double minute = ((degree - (int)degree)*60)*60;
+        System.out.println((int)degree + " Degree " + minute + " Seconds ");
 
     }
 }
