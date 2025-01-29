@@ -1,13 +1,15 @@
-import java.util.Random;;
+import java.util.Random;
 
 public class Game {
     public static void main(String[] args) {
         Random random = new Random();
         int step = random.nextInt(6) + 1;
-        if (step > 0 && step <= 6){
-        System.out.println("Step : " + step +" Cash Price Won : " + stapAndDice(step));
-        } else {
+        // int step = 9;
+        int price = stapAndDice(step);
+        if (price == -1){
             System.out.println("Invalid Value");
+        } else {
+            System.out.println("Step : " + step +" Cash Price Won : " + price);
         }
     }
     public static int stapAndDice(int n) {
@@ -33,6 +35,8 @@ public class Game {
                 int s1 = 500;
                 sum = sum + s1;
                 break;
+            default:
+                sum = -1;
         }
         return sum;
     }

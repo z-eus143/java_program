@@ -2,8 +2,6 @@ public class Circle {
     public static void main(String[] args) {
 
         double radius = 5;
-        circumference(radius);
-
         System.out.println("Radius = " + radius + " Circumference = " + circumference(radius) + "Area = " + area(radius));
         
     }
