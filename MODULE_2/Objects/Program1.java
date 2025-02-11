@@ -1,5 +1,3 @@
-package Objects;
-
 public class Program1 {
 
     String title;
