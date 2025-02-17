@@ -3,14 +3,16 @@ public class Program5 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter a string to reverse");
-        String str = s.next();
-        System.out.println(reverse(str, str.length()-1));
+        String str = s.nextLine();
+        str = reverse(str,str.length());
+        System.out.println(str);
     }
-    public static String reverse(String str,int index) {
-        if (index == 0) {
-           return str.charAt(0) + "";
-        } else {
-           return str.charAt(index) + reverse(str, index-1);
+    public static String reverse(String str,int index){
+        StringBuilder sb = new StringBuilder(str);
+        for (int i = sb.length() - 1; i >=0 ; i --){
+            sb.append(sb.charAt(i));
         }
+        sb.delete(0, index);
+        return sb.toString();
     }
 }
