@@ -16,7 +16,6 @@ public class Screen {
 
     // Method to toggle screen availability
     public void toggleAvailability() {
-        this.isAvailable = !this.isAvailable;
         System.out.println("Screen " + screenNumber + " is now " + (isAvailable ? "Available" : "Not Available"));
     }
 
