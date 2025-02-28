@@ -1,9 +1,9 @@
 public class Screen {
     private int screenNumber;
-    private String screenType; // e.g., IMAX, 3D, Standard
-    private String resolution; // e.g., 4K, 8K
-    private String soundSystem; // e.g., Dolby Atmos, DTS
-    private boolean isAvailable; // Availability status
+    private String screenType; 
+    private String resolution;
+    private String soundSystem; 
+    private boolean isAvailable;
 
     // Constructor
     public Screen(int screenNumber, String screenType, String resolution, String soundSystem, boolean isAvailable) {
@@ -14,9 +14,8 @@ public class Screen {
         this.isAvailable = isAvailable;
     }
 
-    // Method to toggle screen availability
+    // Method to check screen availability
     public void toggleAvailability() {
-        this.isAvailable = !this.isAvailable;
         System.out.println("Screen " + screenNumber + " is now " + (isAvailable ? "Available" : "Not Available"));
     }
 
