@@ -1,13 +1,21 @@
-public class Suv extends Cab {
-    
-    public Suv (int price,int distance) {
-        super(price);
-        super.distance = distance;
+public class SUV extends Cab{
+
+    int distance;
+
+    {
+        price = 100;
     }
 
-    @Override
-    public int fare(){
-        return distance * price;
-    } 
+    public SUV()
+    {   }
 
+    public SUV(int distance)
+    {
+        this.distance = distance;
+    }
+
+    public int fair()
+    {
+        return distance*price;
+    }
 }

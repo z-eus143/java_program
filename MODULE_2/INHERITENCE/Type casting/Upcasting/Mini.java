@@ -1,13 +1,22 @@
-public class Mini extends Cab {
+public class Mini extends Cab{
 
-    public Mini (int price,int distance) {
-        super(price);
-        super.distance = distance;
+    int distance;
+
+    {
+        price = 10;
     }
 
-    @Override
-    public int fare(){
-        return distance * price;
-    } 
+    public Mini()
+    {   }
+
+    public Mini(int distance)
+    {
+        this.distance = distance;
+    }
+
+    public int fair()
+    {
+        return distance*price;
+    }
 
 }

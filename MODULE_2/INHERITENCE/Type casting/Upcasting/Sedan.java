@@ -1,13 +1,21 @@
-public class Sedan extends Cab {
+public class Sedan extends Cab{
 
-    public Sedan (int price,int distance) {
-        super(price);
-        super.distance = distance;
+    int distance;
+
+    {
+        price = 50;
     }
 
-    @Override
-    public int fare(){
-        return distance * price;
-    } 
+    public Sedan()
+    {   }
 
+    public Sedan(int distance)
+    {
+        this.distance = distance;
+    }
+
+    public int fair()
+    {
+        return distance*price;
+    }
 }
